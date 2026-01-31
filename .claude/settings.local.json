@@ -4,9 +4,15 @@
       "Bash(npx create-next-app@latest . --typescript --tailwind --app --no-src-dir --import-alias \"@/*\" --eslint)",
       "Bash(npx create-next-app@latest:*)",
       "Bash(npm run dev:*)",
-      "Bash(gh pr list:*)",
-      "Bash(gh pr view:*)",
-      "Bash(gh pr diff:*)"
+      "Bash(git checkout:*)",
+      "Bash(git add:*)",
+      "Bash(git commit:*)",
+      "Bash(git push:*)",
+      "Bash(gh pr create:*)"
     ]
+  },
+  "statusLine": {
+    "type": "command",
+    "command": "python3 .claude/scripts/context-monitor.py"
   }
 }
